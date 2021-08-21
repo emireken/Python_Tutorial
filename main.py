@@ -91,10 +91,43 @@
 # else:
 #     print("Operator is invalid!")
 
-# #Dictionaries
+# # Dictionaries
 # monthConversions = dict(Jan="January", Feb="February", Mar="March", Apr="April", May="May", Jun="June", Jul="July",
 #                         Aug="August", Sep="September", Oct="October", Nov="November", Dec="December")
-#
 # print(monthConversions['Apr'])
 # print(monthConversions.get("Dec","Not Found!"))
 # print(monthConversions.get("Emr","Not Found!"))
+
+# # While Loop
+# i=1
+# while i<=10:
+#     print(i)
+#     i += 1
+# print("Done with loop!")
+
+# # Building a Guessing Game
+# secretWord = "Emir"
+# userWord= ""
+# while userWord != secretWord:
+#     userWord = input("Enter a Word: ")
+#
+# print("You Win!")
+
+
+# Building a Guessing Game#2
+import random
+secretNumber = random.randint(1, 10)
+userNumber = 0
+userLive = 3
+print("Pick a Number Between 1 and 10")
+print(secretNumber)
+while userNumber != secretNumber and (userLive > 0):
+    userNumber = int(input("Enter a Number: "))
+    if (userLive > 1) and (userNumber != secretNumber):
+        userLive -= 1
+        print("Try Again! " + str(userLive) + " Lives Remaining")
+    elif (userLive >= 0) and (userNumber == secretNumber):
+        print("You Win!")
+    else:
+        print("You Failed!")
+        break
