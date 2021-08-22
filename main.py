@@ -114,20 +114,22 @@
 # print("You Win!")
 
 
-# Building a Guessing Game#2
-import random
-secretNumber = random.randint(1, 10)
-userNumber = 0
-userLive = 3
-print("Pick a Number Between 1 and 10")
-print(secretNumber)
-while userNumber != secretNumber and (userLive > 0):
-    userNumber = int(input("Enter a Number: "))
-    if (userLive > 1) and (userNumber != secretNumber):
-        userLive -= 1
-        print("Try Again! " + str(userLive) + " Lives Remaining")
-    elif (userLive >= 0) and (userNumber == secretNumber):
-        print("You Win!")
-    else:
-        print("You Failed!")
-        break
+# # Building a Guessing Game#2
+# import random
+# secretNumber = random.randint(1, 10)
+# userNumber = 0
+# userLive = 3
+# print("Pick a Number Between 1 and 10")
+# print(secretNumber)
+# while userNumber != secretNumber and (userLive > 0):
+#     userNumber = int(input("Enter a Number: "))
+#     if (userLive > 1) and (userNumber != secretNumber):
+#         userLive -= 1
+#         print("Try Again! " + str(userLive) + " Lives Remaining")
+#     elif (userLive >= 0) and (userNumber == secretNumber):
+#         print("You Win!")
+#     else:
+#         print("You Failed!")
+#         break
+
+# For Loop
